@@ -1,5 +1,30 @@
 # My Notes From My Learnings About Command Line Tools
 
+## Some basic command line commands and operators 
+
+* pwd
+* ls
+* cd
+* clear
+* ..
+* rm
+    * -r -> If you tried to delete a non empty directory, use this instead of rmdir because you can't use that.
+* touch
+* mkdir
+* rmdir
+    * -r -> If the directory not empty, use this
+* echo
+    * '>' -> 'appends'. redirection operator.
+    * echo 'Hello, world! > hello.txt
+    It redirects the output inside of the hello.txt and overwrite on the existing data.
+    * '>>' -> 'overrides'. append redirection operator. We also are using this like the redirection operator but with this operator, output was not overwritten but appended to the specified output file.
+    * If the specified output file is not created before, echo command will realize and create that file.
+* cat
+    * cat hello.txt -> It shows the content of the hello.txt file
+    * We also can use some operators with cat command too.
+        * cat hello.txt > hello_copy.txt -> We also can redirect the output with our operator too. Cat command overwrites the hello.txt file content to the hello_copy.txt file.
+    * Like how it happens for the echo, cat command also can create some files that does not exist in the first place.
+
 ## Notes from the 'Find files and directories' part
 * Options are way us add more functionality to a command and change it's default behaviour. So, we use options to add additional functionality to a command.
 * find [path] [option] [expression]
